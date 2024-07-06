@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRÍCULO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(179, 214, 245);
+            padding-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 2px blue;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .tab-pane {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 2px solid blueviolet;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(16, 33, 184);
+            color: white;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Batman - CURRÍCULO</h1>
+    <div class="container mt-5">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#resumo">Resumo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#dados-cadastrais">Dados Cadastrais</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#formacao">Formação</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#experiencia">Experiência Profissional</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#cursos">Cursos Complementares</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#outras-informacoes">Outras Informações/Habilidades</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="resumo">
+                <p>Me chamo <span style="color: rgba(2, 2, 233, 0.842);">Bruce Wayne</span>, mais conhecido como Batman. Já participei de várias batalhas contra o crime, por isso, com o advento da tecnologia, quero me candidatar a uma vaga de cibersegurança na busca da justiça digital.</p>
+            </div>
+            <div class="tab-pane fade" id="dados-cadastrais">
+                <table>
+                    <tr>
+                        <th>Dados cadastrais</th>
+                    </tr>
+                    <tr>
+                        <td>Contato:</td>
+                        <td>batman@gothamcity.com</td>
+                    </tr>
+                    <tr>
+                        <td>Endereço:</td>
+                        <td>Batcaverna</td>
+                    </tr>
+                    <tr>
+                        <td>Idade</td>
+                        <td>84 anos</td>
+                    </tr>
+                    <tr>
+                        <td>Estado civil:</td>
+                        <td>Solteiro</td>
+                    </tr>
+                    <tr>
+                        <td>Telefone:</td>
+                        <td>666-666</td>
+                    </tr>
+                    <tr>
+                        <td>Rede social:</td>
+                        <td><a href="https://www.linkedin.com/in">LinkedIn</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="formacao">
+                <h2>Cursos e formação acadêmica</h2>
+                <ol type="I">
+                    <li>Detetive</li>
+                    <li>Mestre em fugas</li>
+                    <li>Disfarces</li>
+                    <li>Explosivos</li>
+                    <li>Inventor</li>
+                    <li>Cientista</li>
+                    <li>Acrobata</li>
+                    <li>Piloto</li>
+                </ol>
+            </div>
+            <div class="tab-pane fade" id="experiencia">
+                <h2>Experiência/feitos</h2>
+                <ol type="A">
+                    <li>Bilionário americano</li>
+                    <li>Magnata de negócios</li>
+                    <li>Filantropo</li>
+                    <li>Dono da corporação Wayne Enterprises</li>
+
+                </ol>
+            </div>
+            <div class="tab-pane fade" id="cursos">
+                <h2>Cursos Complementares</h2>
+                <ul>
+                    <li>Introdução à Data Science (Udemy)</li>
+                    <li>Duração:40 horas</li><br>
+                    <li>Python do zero ao avançado(Udemy)</li>
+                    <li>Duração:50 horas</li><br>
+                    <li>Desenvolvimento em jogos em Gml (Hotmart)</li>
+                    <li>Duração: 200 horas</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="outras-informacoes">
+                <h2>Habilidades e competências</h2>
+                <ul>
+                    <li>Justiceiro</li>
+                    <li>Líder</li>
+                    <li>Homen Morcego</li>
+                    <li>Raciocínio Rápido</li>
+                    <li>Não-meta-humano mais forte de toda face da terra</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <form method="get" action="">
+            <label for="idsugestao">Deixe aqui a sua sugestão:</label><br>
+            <textarea name="MENSAGEM" id="idsugestao"></textarea><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </form>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
